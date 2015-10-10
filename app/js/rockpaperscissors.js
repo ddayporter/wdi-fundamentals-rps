@@ -72,11 +72,9 @@ function playToFive() {
         console.log('The winner of this round is ' + winner);
         if (winner === 'player') {
             playerWins += 1;
-            computerWins = computerWins;
             console.log('Player chose ' + playerMove + ' while Computer chose ' + computerMove);
             console.log('The score is currently ' + playerWins + ' to ' + computerWins + '\n');
         } else if (winner === 'computer') {
-            playerWins = playerWins;
             computerWins += 1;
             console.log('Player chose ' + playerMove + ' while Computer chose ' + computerMove);
             console.log('The score is currently ' + playerWins + ' to ' + computerWins + '\n');
@@ -90,3 +88,4 @@ function playToFive() {
     return [playerWins, computerWins];
 }
 
+playToFive();
